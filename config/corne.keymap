@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
@@ -13,7 +14,7 @@
         kp_or_layer: kp_or_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "KP_OR_LAYER";
-            bindings = <&lt>, <&kp>;
+            bindings = <&lt>, <&bl>;
 
             #binding-cells = <2>;
             tapping-term-ms = <150>;
